@@ -1,0 +1,117 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray500: hsl(0, 0%, 42%);
+    --Gray950: hsl(0, 0%, 7%);
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Figtree", sans-serif;
+    background-color: var(--Yellow);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    background-color: var(--White);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    width: min(22rem, 90%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    gap: 1.25rem;
+}
+
+.illustration img {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+
+button {
+    background-color: var(--Yellow);
+    border: 1px solid var(--Yellow);
+    margin-bottom: 0.25rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    align-self: self-start;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: var(--White);
+}
+.date {
+    color: var(--Gray950);
+    font-style: bold;
+    font-weight: 500;
+    margin-bottom: -0.25rem;
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 0.25rem;
+}
+
+.para {
+    color: var(--Gray500);
+}
+
+p {
+    line-height: 1.5;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.avatar img {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
+
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
