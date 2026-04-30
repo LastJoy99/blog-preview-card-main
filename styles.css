@@ -34,8 +34,9 @@ main {
     background-color: var(--White);
     padding: 1.5rem;
     border-radius: 0.75rem;
+    border: 1px solid black;
     width: min(22rem, 90%);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 15px 10px 20px rgba(0, 0, 0, 0.15);
     gap: 1.25rem;
 }
 
@@ -96,6 +97,18 @@ p {
 .avatar img {
     width: 2rem;
     height: 2rem;
+}
+
+.attribution {
+    justify-content: center;
+    bottom: 1rem;
+    text-align: center;
+    color: var(--Gray500);
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--Gray500);
 }
 
 
